@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef1ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #dfd5d5;
+            padding: 20px;
+            border-radius: 8;
+            box-shadow: 0 0 10px rgba(20, 20, 20, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="Address"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #070707;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #81f498;
+            color: #070707;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #f7faf8;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="/submit_registration" method="POST">
+            <label for="username">Name:</label>
+            <input type="text" id="Name" name="Name" required><br>
+            <label for="Contact">Contact:</label>
+            <input type="number" id="Contact:" name="Contact" required><br>
+            <label for="Address">Address:</Address>:</label>
+            <input type="Address" id="Address:" name="Address" required><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">male
+        <input type="radio" id="female" name="gender" value="female">female</br>
+        <input type="radio" id="Other" name="gender" value="Other">Other</br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
